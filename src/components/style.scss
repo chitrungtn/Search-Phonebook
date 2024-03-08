@@ -17,21 +17,20 @@
 
     .search {
         display: flex;
-        height: 30px;
+        height: 40px;
 
         .search-box {
-            margin-left: 16px;
-            margin-bottom: 4px;
+            margin: 4px 0 4px 16px;
             width: 85%;
             background-color: white;
             border-radius: 50px;
             display: flex;
-            height: 24px;
+            height: 30px;
 
             .icon {
                 padding: 0px 4px 0 8px;
-                width: 24px;
-                height: 24px;
+                width: 26px;
+                height: 30px;
                 opacity: 0.6;
             }
             .text {
@@ -48,11 +47,11 @@
                 border-radius: 50px;
                 outline: none;
             }
-
         }
 
         .cancel {
             color: white;
+            margin-top: 4px;
             padding: 0 12px;
             opacity: 0.8;
             &:hover {
@@ -86,7 +85,6 @@
 
 .container {
     height: 100%;
-    //overflow-y: scroll;
 }
 
 .content {
@@ -98,8 +96,9 @@
     }
 
     .wrap {
+        overflow: hidden;
         .seperate {
-            background-color:  #f5f5f5;
+            background-color:  #f5f5f5; 
             height: 2px;
             transform: translateX(74px);
         }
@@ -107,6 +106,7 @@
         .person {
             margin: 12px;
             display: flex;
+
             .avatar {
                 width: 50px;
                 height: 50px;
@@ -144,7 +144,6 @@
                     }
                 }
             }
-    
         }
     }
 }

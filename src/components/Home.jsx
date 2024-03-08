@@ -53,6 +53,7 @@ const Home = () => {
     
             // Sắp xếp các nhóm theo chữ cái đầu tiên
             groupedContactsArray.sort((a, b) => a.letter.localeCompare(b.letter));
+            groupedContactsArray.forEach((e)=>e.contacts.sort((a, b) => a.first_name.localeCompare(b.first_name)));
             setContacts(groupedContactsArray)
         }
     }
@@ -123,6 +124,7 @@ const Home = () => {
                 Tài khoản ngân hàng
             </div>
         </div>
+        {/* Danh ba */}
         {isLoading ? (
             <p style={{ textAlign:'center', fontSize:'32px'}}>Loading...</p>
         ) : (
@@ -140,8 +142,7 @@ const Home = () => {
                                         <div className="seperate"></div>
                                     ) : (
                                         <></>
-                                    )
-                                    }
+                                    )}
                                     
                                     <div className="person">
                                         <div className="avatar">
